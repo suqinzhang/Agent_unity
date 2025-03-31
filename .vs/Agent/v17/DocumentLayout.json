@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zsq\\GameDemo\\Agent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|c:\\users\\zsq\\gamedemo\\agent\\assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|solutionrelative:assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|C:\\Users\\zsq\\GameDemo\\Agent\\assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|solutionrelative:assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|C:\\Users\\zsq\\GameDemo\\Agent\\assets\\newsagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2FD53A0-C0AE-E94F-E198-9A314E87D103}|Assembly-CSharp.csproj|solutionrelative:assets\\newsagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Selector.cs",
+              "DocumentMoniker": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\Selector.cs",
+              "RelativeDocumentMoniker": "Assets\\Selector.cs",
+              "ToolTip": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\Selector.cs",
+              "RelativeToolTip": "Assets\\Selector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T13:31:06.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewsAgent.cs",
+              "DocumentMoniker": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\NewsAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\NewsAgent.cs",
+              "ToolTip": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\NewsAgent.cs",
+              "RelativeToolTip": "Assets\\NewsAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T11:44:02.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Handle_msg.cs",
+              "DocumentMoniker": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\Handle_msg.cs",
+              "RelativeDocumentMoniker": "Assets\\Handle_msg.cs",
+              "ToolTip": "C:\\Users\\zsq\\GameDemo\\Agent\\Assets\\Handle_msg.cs",
+              "RelativeToolTip": "Assets\\Handle_msg.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAWwBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T10:50:56.372Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
