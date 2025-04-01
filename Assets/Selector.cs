@@ -2,40 +2,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Selector : MonoBehaviour, Msg_Context
+public class Selector : MonoBehaviour, Handle
 {
-    string Prompt = "ÄãÊÇÑ¡ÔñÆ÷£¬ÈºÖĞÓĞ, ·ÖÎö²Æ¾­ĞÂÎÅµÄNewsAgent,¸ù¾İĞÂÎÅÕªÒªËø¶¨Ç±Á¦¹ÉµÄSearchAgent,¼ÆËãkÏßÍ¼µÄKAgent,·ÖÎö·çÏÕµÄFxAgent£¬×îºó¾ö²ß¹ÉÆ±½»Ò×µÄManegerAgent £¬°ïÎÒÑ¡ÔñÏÂÒ»¸öagent,·µ»Ø¸ñÊ½ {   \"content\": \" \",   \"next\": \" \"},´¦ÀíµÄÈÎÎñÊÇ£º";
+    string Prompt = "ä½ æ˜¯é€‰æ‹©å™¨ï¼Œç¾¤ä¸­æœ‰, åˆ†æè´¢ç»æ–°é—»çš„NewsAgent,æ ¹æ®æ–°é—»æ‘˜è¦é”å®šæ½œåŠ›è‚¡çš„SearchAgent,è®¡ç®—kçº¿å›¾çš„KAgent,åˆ†æé£é™©çš„FxAgentï¼Œæœ€åå†³ç­–è‚¡ç¥¨äº¤æ˜“çš„ManegerAgent ï¼Œå¸®æˆ‘é€‰æ‹©ä¸‹ä¸€ä¸ªagent,è¿”å›æ ¼å¼ {   \\\"stop\\\": \\\" \\\",   \\\"next\\\": \\\" \\\"},nextæ˜¯å¯¹åº”çš„agentï¼Œstop bool æ˜¯å¦åœæ­¢æ•´ä¸ªç¾¤èŠ,å¦‚æœåœæ­¢ï¼Œnextè®¾ç½®0";
     string source = "Selector";
-    
+    public static int flag = 0;     //0è¿™ä¸ªç¾¤èŠåœæ­¢ï¼Œ1å¯åŠ¨é€‰æ‹©ï¼Œ2ï¼Œagentå·¥ä½œ
+    string next = "";
 
     void Start()
     {
         Msg_Context.dic.Add(source, Handle_msg);
-
+        Debug.Log(Prompt);
+       
     }
-
- 
-
 
     void Update()
     {
-         
+        
+        if (flag == 2)
+        {
+            _ = Handle_msg();
+            
+        }
+        if (flag == 1)
+        {
+            Debug.Log(next);
+            if (Msg_Context.dic.ContainsKey(next))
+            {
+                _ = Msg_Context.dic[next]();
+            }
+            else
+            {
+                Debug.Log("æ²¡æœ‰è¿™ä¸ªagent");
+            }
+            
+        }
     }
 
-    public async Task Handle_msg(Text_msg msg)
+    public async Task Handle_msg()
     {
-        string send_msg= Msg_Context.ctx.ToString();    //ÉÏÏÂÎÄ×Ö·û´®
-        var response = await RequestHelper.Send(send_msg, Prompt); //»ñÈ¡´óÄ£ĞÍ»Ø¸´
+        string send_msg = JsonUtility.ToJson(Msg_Context.ctx);
+        Debug.Log(send_msg);
+        var response = await RequestHelper.Send(Prompt, send_msg);
+        var select = JsonUtility.FromJson<Select_Msg>(response);
+        Debug.Log(response);
+        next = select.next;
+        next= "NewsAgent";
+        Msg_Context.ctx.Add(new Text_msg { source = source, content = response });
+        Debug.Log(Msg_Context.ctx.ToString());
+        flag = select.stop ?  0 : 1;
         
-        Msg_Context.ctx.Add(new Text_msg { source = source, content = response });//·ÅÈëÉÏÏÂÎÄ£¬Éú³ÉÔ´¼ÓÉú³ÉÏûÏ¢×÷ÎªÏÂÒ»¸ö´¦ÀíÆ÷µÄ²ÎÊı
     }
 }
 
 
 class Select_Msg
 {
-    public string content { get; set; }
     public string next { get; set; }
+    public bool stop { get; set; }
 }

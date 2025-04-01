@@ -76,6 +76,14 @@ namespace UnityEngine.EventSystems
         }
 
         /// <summary>
+        /// Interface to Input.mouseDisplayIndex. Can be overridden to provide custom input instead of using the Input class.
+        /// </summary>
+        public virtual int mouseDisplayIndex
+        {
+            get { return Input.mouseDisplayIndex; }
+        }
+
+        /// <summary>
         /// Interface to Input.mouseScrollDelta. Can be overridden to provide custom input instead of using the Input class.
         /// </summary>
         public virtual Vector2 mouseScrollDelta
