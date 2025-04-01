@@ -10,7 +10,7 @@ public class ManegerAgent : MonoBehaviour, Handle
 
     void Start()
     {
-        Msg_Context.dic.Add(source, Handle_msg);
+        Msg_Context.dic.Add(source, this);
 
 
     }

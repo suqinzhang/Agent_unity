@@ -18,8 +18,6 @@ namespace UnityEditor.TestTools.TestRunner
         [SerializeField]
         private AndroidPlatformSetup m_AndroidPlatformSetup = new AndroidPlatformSetup();
         [SerializeField]
-        private HMIAndroidPlatformSetup m_HMIAndroidPlatformSetup = new HMIAndroidPlatformSetup();
-        [SerializeField]
         private SwitchPlatformSetup m_SwitchPlatformSetup = new SwitchPlatformSetup();
 #if UNITY_2019_3_OR_NEWER
         [SerializeField]
@@ -116,7 +114,7 @@ namespace UnityEditor.TestTools.TestRunner
                 {BuildTarget.XboxOne, m_XboxOnePlatformSetup},
 #endif
                 {BuildTarget.Android, m_AndroidPlatformSetup},
-                {BuildTarget.HMIAndroid, m_HMIAndroidPlatformSetup},
+                {BuildTarget.HMIAndroid, m_AndroidPlatformSetup},
                 {BuildTarget.WSAPlayer, m_UwpPlatformSetup},
                 {BuildTarget.Lumin, m_LuminPlatformSetup},
 #if UNITY_2019_3_OR_NEWER

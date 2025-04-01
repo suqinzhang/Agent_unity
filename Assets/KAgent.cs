@@ -8,7 +8,7 @@ public class KAgent : MonoBehaviour, Handle
 
     void Start()
     {
-        Msg_Context.dic.Add(source, Handle_msg);
+        Msg_Context.dic.Add(source, this);
 
 
     }
