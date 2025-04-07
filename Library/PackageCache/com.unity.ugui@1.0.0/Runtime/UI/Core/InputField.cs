@@ -401,6 +401,7 @@ namespace UnityEngine.UI
                 switch (Application.platform)
                 {
                     case RuntimePlatform.Android:
+                    case RuntimePlatform.HMIAndroid:
                     case RuntimePlatform.IPhonePlayer:
                     case RuntimePlatform.tvOS:
                         return m_HideMobileInput;
@@ -1360,6 +1361,7 @@ namespace UnityEngine.UI
             switch (platform)
             {
                 case RuntimePlatform.Android:
+                case RuntimePlatform.HMIAndroid:
                     if (s_IsQuestDevice)
                         return TouchScreenKeyboard.isSupported;
 
@@ -1515,7 +1517,7 @@ namespace UnityEngine.UI
 
                         if (lineType == LineType.MultiLineSubmit && c == '\n')
                         {
-                            m_Keyboard.text = m_Text;
+                            UpdateLabel();
 
                             SendOnSubmit();
                             OnDeselect(null);
@@ -1558,7 +1560,7 @@ namespace UnityEngine.UI
                 UpdateCaretFromKeyboard();
             }
 
-            if (m_Keyboard.status != TouchScreenKeyboard.Status.Visible)
+            if (m_Keyboard != null && m_Keyboard.status != TouchScreenKeyboard.Status.Visible)
             {
                 if (m_Keyboard.status == TouchScreenKeyboard.Status.Canceled)
                     m_WasCanceled = true;
@@ -2538,7 +2540,7 @@ namespace UnityEngine.UI
                 // To fix case 1320719; we need to rebuild the layout before we check the number of characters that can fit within the extents.
                 // Otherwise, the extents provided may not be good.
                 textComponent.SetLayoutDirty();
-                Canvas.ForceUpdateCanvases();
+
 
                 if (!isEmpty)
                 {

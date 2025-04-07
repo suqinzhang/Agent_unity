@@ -291,6 +291,9 @@ namespace UnityEngine.EventSystems
                 leftData.position = pos;
             }
             leftData.scrollDelta = input.mouseScrollDelta;
+#if UNITY_HMIANDROID
+            leftData.displayIndex = input.mouseDisplayIndex;
+#endif
             leftData.button = PointerEventData.InputButton.Left;
             eventSystem.RaycastAll(leftData, m_RaycastResultCache);
             var raycast = FindFirstRaycast(m_RaycastResultCache);

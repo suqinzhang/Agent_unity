@@ -148,24 +148,29 @@ namespace UnityEngine.UI
                 // We support multiple display on some platforms. When supported:
                 //  - InputSystem will set eventData.displayIndex
                 //  - Old Input System will set eventPosition.z
-                //  - HMI Android supports multiple display on new & old input system.
+                //  - HMIAndroid supports multiple display on new & old input system.
+#if (ENABLE_INPUT_SYSTEM && !UNITY_ANDROID) || (UNITY_HMIANDROID && !UNITY_EDITOR)
                 eventPosition.z = eventData.displayIndex;
+#endif
+
+                // Discard events that are not part of this display so the user does not interact with multiple displays at once.
+                if ((int) eventPosition.z != displayIndex)
+                    return;
             }
             else
             {
                 eventPosition = eventData.position;
-#if ENABLE_INPUT_SYSTEM
+#if (ENABLE_INPUT_SYSTEM && !UNITY_ANDROID) || (UNITY_HMIANDROID && !UNITY_EDITOR)
                 eventPosition.z = eventData.displayIndex;
-#endif
-#if UNITY_EDITOR
-                if (eventData.displayIndex == 0) 
+                if ((int) eventPosition.z != displayIndex)
+                    return;
+#elif UNITY_EDITOR 
                     eventPosition.z = Display.activeEditorGameViewTarget;
+                if ((int) eventPosition.z != displayIndex)
+                    return;
 #endif
                 // We don't really know in which display the event occurred. We will process the event assuming it occurred in our display.
             }
-
-            if ((int) eventPosition.z != displayIndex)
-                return;
 
             // Convert to view space
             Vector2 pos;
@@ -213,9 +218,11 @@ namespace UnityEngine.UI
                 {
                     if (ReflectionMethodsCache.Singleton.raycast3D != null)
                     {
-                        var hits = ReflectionMethodsCache.Singleton.raycast3DAll(ray, distanceToClipPlane, (int)m_BlockingMask);
-                        if (hits.Length > 0)
-                            hitDistance = hits[0].distance;
+                        RaycastHit hit;
+                        if (ReflectionMethodsCache.Singleton.raycast3D(ray, out hit, distanceToClipPlane, (int)m_BlockingMask))
+                        {
+                            hitDistance = hit.distance;
+                        }
                     }
                 }
 #endif

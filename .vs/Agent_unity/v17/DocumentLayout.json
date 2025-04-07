@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\Agent_unity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\selector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\kagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\kagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\searchagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\searchagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\handle_msg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|d:\\agent_unity\\assets\\newsagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\fxagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\fxagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|D:\\Agent_unity\\assets\\kagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58A12101-6F78-DFFE-8A4E-E5AB8ED320D7}|Assembly-CSharp.csproj|solutionrelative:assets\\kagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +41,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 18,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 242,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +63,104 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 158,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewsAgent.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\NewsAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\NewsAgent.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\NewsAgent.cs",
+              "RelativeToolTip": "Assets\\NewsAgent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:49:53.333Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManegerAgent.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\ManegerAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\ManegerAgent.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\ManegerAgent.cs",
+              "RelativeToolTip": "Assets\\ManegerAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:02:54.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FxAgent.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\FxAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\FxAgent.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\FxAgent.cs",
+              "RelativeToolTip": "Assets\\FxAgent.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:02:41.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KAgent.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\KAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\KAgent.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\KAgent.cs",
+              "RelativeToolTip": "Assets\\KAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:02:11.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchAgent.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\SearchAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\SearchAgent.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\SearchAgent.cs",
+              "RelativeToolTip": "Assets\\SearchAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:01:37.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Handle_msg.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\Handle_msg.cs",
+              "RelativeDocumentMoniker": "Assets\\Handle_msg.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\Handle_msg.cs",
+              "RelativeToolTip": "Assets\\Handle_msg.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwBgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:49:58.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Selector.cs",
+              "DocumentMoniker": "D:\\Agent_unity\\Assets\\Selector.cs",
+              "RelativeDocumentMoniker": "Assets\\Selector.cs",
+              "ToolTip": "D:\\Agent_unity\\Assets\\Selector.cs",
+              "RelativeToolTip": "Assets\\Selector.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwEkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T05:23:14.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -72,106 +170,9 @@
               "RelativeDocumentMoniker": "Assets\\test.cs",
               "ToolTip": "D:\\Agent_unity\\Assets\\test.cs",
               "RelativeToolTip": "Assets\\test.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwA0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T06:43:57.308Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 382,
-          "SelectedChildIndex": 4,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManegerAgent.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\ManegerAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\ManegerAgent.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\ManegerAgent.cs",
-              "RelativeToolTip": "Assets\\ManegerAgent.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxIAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T07:02:54.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FxAgent.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\FxAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\FxAgent.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\FxAgent.cs",
-              "RelativeToolTip": "Assets\\FxAgent.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxEAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T07:02:41.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KAgent.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\KAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\KAgent.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\KAgent.cs",
-              "RelativeToolTip": "Assets\\KAgent.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxEAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T07:02:11.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SearchAgent.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\SearchAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\SearchAgent.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\SearchAgent.cs",
-              "RelativeToolTip": "Assets\\SearchAgent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T07:01:37.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Handle_msg.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\Handle_msg.cs",
-              "RelativeDocumentMoniker": "Assets\\Handle_msg.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\Handle_msg.cs",
-              "RelativeToolTip": "Assets\\Handle_msg.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwDkAAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:49:58.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NewsAgent.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\NewsAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\NewsAgent.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\NewsAgent.cs",
-              "RelativeToolTip": "Assets\\NewsAgent.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAxwBIAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:49:53.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Selector.cs",
-              "DocumentMoniker": "D:\\Agent_unity\\Assets\\Selector.cs",
-              "RelativeDocumentMoniker": "Assets\\Selector.cs",
-              "ToolTip": "D:\\Agent_unity\\Assets\\Selector.cs",
-              "RelativeToolTip": "Assets\\Selector.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwDIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:23:14.885Z",
               "EditorCaption": ""
             }
           ]
